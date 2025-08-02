@@ -1,0 +1,53 @@
+// LAYOUT
+body {
+    background: #ddeeff;
+}
+
+.app-wrapper {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+// BUTTONS
+.btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 50px;
+}
+.button {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-family: 'PT Sans';
+    font-size: 30px;
+    background: #47a5fe;
+    border: 5px solid #ffe4e4ff;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s;
+
+    @media (max-width: 480px) {
+        font-size: 24px;
+    }
+
+    &,
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background: #0f83b7;
+    }
+}

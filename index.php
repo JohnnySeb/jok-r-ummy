@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Jok-R-ummy</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body class="intro">
+        <div class="app-wrapper">
+            <div class="moving-background backgroundslide">
+                <div class="container">
+                    <h1>JokRummy</h1>
+            
+                    <div class="clown-face">
+                        <img src='/assets/clown.svg' alt='' />
+                    </div>
+                
+                    <div class="btn-wrapper">
+                        <a href="game.php" class="button">
+                            On commence!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

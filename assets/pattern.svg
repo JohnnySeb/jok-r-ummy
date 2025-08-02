@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clippath">
+      <rect width="200" height="200" style="fill: none;"/>
+    </clipPath>
+  </defs>
+  <g style="clip-path: url(#clippath);">
+    <rect x="-489.4" y="-61.8" width="855.4" height="47.1" transform="translate(9 -54.9) rotate(-45)" style="fill: #47a5fe;"/>
+    <rect x="-456.1" y="-28.5" width="855.4" height="47.1" transform="translate(-4.8 -21.5) rotate(-45)" style="fill: #ffe4e4ff;"/>
+    <rect x="-422.8" y="4.8" width="855.4" height="47.1" transform="translate(-18.7 11.8) rotate(-45)" style="fill: white;"/>
+    <rect x="-389.4" y="38.2" width="855.4" height="47.1" transform="translate(-32.5 45.1) rotate(-45)" style="fill: #47a5fe;"/>
+    <rect x="-356.1" y="71.5" width="855.4" height="47.1" transform="translate(-46.3 78.5) rotate(-45)" style="fill: #ffe4e4ff;"/>
+    <rect x="-322.8" y="104.8" width="855.4" height="47.1" transform="translate(-60.1 111.8) rotate(-45)" style="fill: white;"/>
+    <rect x="-289.4" y="138.2" width="855.4" height="47.1" transform="translate(-73.9 145.1) rotate(-45)" style="fill: #47a5fe;"/>
+    <rect x="-256.1" y="171.5" width="855.4" height="47.1" transform="translate(-87.7 178.5) rotate(-45)" style="fill: #ffe4e4ff;"/>
+    <rect x="-222.8" y="204.8" width="855.4" height="47.1" transform="translate(-101.5 211.8) rotate(-45)" style="fill: white;"/>
+    <rect x="-189.4" y="238.2" width="855.4" height="47.1" transform="translate(-115.3 245.1) rotate(-45)" style="fill: #47a5fe;"/>
+    <rect x="-156.1" y="271.5" width="855.4" height="47.1" transform="translate(-129.1 278.5) rotate(-45)" style="fill: #ffe4e4ff;"/>
+    <rect x="-122.8" y="304.8" width="855.4" height="47.1" transform="translate(-142.9 311.8) rotate(-45)" style="fill: white;"/>
+    <rect x="-89.4" y="338.2" width="855.4" height="47.1" transform="translate(-156.7 345.1) rotate(-45)" style="fill: #47a5fe;"/>
+    <rect x="-56.1" y="371.5" width="855.4" height="47.1" transform="translate(-170.5 378.5) rotate(-45)" style="fill: #ffe4e4ff;"/>
+    <rect x="-22.8" y="404.8" width="855.4" height="47.1" transform="translate(-184.3 411.8) rotate(-45)" style="fill: white;"/>
+  </g>
+</svg>

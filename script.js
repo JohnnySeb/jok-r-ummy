@@ -1,25 +1,22 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const board = document.getElementById('game-board');
-  const scoreEl = document.getElementById('score');
+$(function() {
+    const $intro = $('body.intro');
 
-  // Exemple : générer 10 cartes au hasard
-  for (let i = 1; i <= 10; i++) {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.textContent = i;
-    card.addEventListener('click', () => {
-      alert(`Carte ${i} cliquée !`);
-    });
-    board.appendChild(card);
-  }
+    if ($intro.length) {
+        const $h1 = $intro.find('h1');
 
-  // Score fictif
-  let score = 0;
-  function updateScore() {
-    score += 10;
-    scoreEl.textContent = score;
-  }
+        if ($h1.length) {
+            const chars = $h1.text().split('');
 
-  // Appel test
-  setTimeout(updateScore, 1000);
+            $h1.html(chars.map(char => {
+                const freq = (Math.random() * (2 - 1) + 1).toFixed(2);
+                return `<span class="flicker" data-frequency="${freq}">${char}</span>`;
+            }).join(''));
+
+            $h1.find('.flicker').each(function() {
+                const freq = parseFloat($(this).attr('data-frequency'));
+                $(this).css('animation-duration', `${1.5 * freq}s`);
+                $(this).attr('data-letter', $(this).text());
+            });
+        }
+    }
 });
