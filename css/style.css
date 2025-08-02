@@ -154,6 +154,45 @@ body {
   -webkit-box-shadow: 0px 0px 6px 0px #bcbcbc;
   box-shadow: 0px 0px 6px 0px #bcbcbc;
 }
+.container h1 {
+  position: relative;
+  z-index: 2;
+  font-family: "Bitcount Prop Single";
+  text-align: center;
+  font-size: 65px;
+  color: #47a5fe;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.container h1 span[data-letter=R] {
+  font-family: Henny Penny;
+  color: #f75650;
+  font-size: 1.2em;
+  padding-right: 0.1em;
+}
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 14vw;
+  }
+}
+.container .johnnyseb {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+}
+@media (max-height: 780px) {
+  .container .johnnyseb {
+    width: 55%;
+  }
+}
+@media (max-height: 800px) and (min-width: 450px) {
+  .container .johnnyseb {
+    width: 60%;
+  }
+}
 
 .btn-wrapper {
   display: flex;
@@ -231,27 +270,6 @@ body {
   animation-iteration-count: infinite;
 }
 
-body.intro h1 {
-  position: relative;
-  z-index: 2;
-  font-family: "Bitcount Prop Single";
-  text-align: center;
-  font-size: 65px;
-  color: #47a5fe;
-  padding-top: 20px;
-  margin-bottom: 30px;
-}
-body.intro h1 span[data-letter=R] {
-  font-family: Henny Penny;
-  color: #f75650;
-  font-size: 1.2em;
-  padding-right: 0.1em;
-}
-@media (max-width: 480px) {
-  body.intro h1 {
-    font-size: 14vw;
-  }
-}
 body.intro .clown-face {
   display: block;
   margin: 0 auto;
@@ -265,14 +283,6 @@ body.intro .clown-face img {
   max-width: 100%;
   width: 100%;
 }
-body.intro .johnnyseb {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transform: translateX(50%);
-  width: 100%;
-}
 @media (max-height: 950px) {
   body.intro .clown-face {
     width: 85%;
@@ -282,19 +292,32 @@ body.intro .johnnyseb {
   body.intro .clown-face {
     margin-bottom: 7vh;
   }
-  body.intro .johnnyseb {
-    width: 55%;
-  }
 }
 @media (max-height: 860px) and (min-width: 450px) {
   body.intro .clown-face {
     width: 72%;
   }
 }
-@media (max-height: 800px) and (min-width: 450px) {
-  body.intro .johnnyseb {
-    width: 60%;
-  }
+
+body.game .container h1 {
+  padding-top: 10px;
+  font-size: 35px;
+}
+body.game .mission {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0 50px;
+}
+body.game .mission .title {
+  display: block;
+  font-size: 16px;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  text-align: center;
+  color: #757575;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

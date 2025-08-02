@@ -1,0 +1,26 @@
+body.game {
+    .container {
+        h1 {
+            padding-top: 10px;
+            font-size: 35px;
+        }
+    }
+
+    .mission {
+        display: block;
+        position: relative;
+        width: 100%;
+        padding: 0 50px;
+
+        .title {
+            display: block;
+            font-size: 16px;
+            font-family: 'PT Sans';
+            text-transform: uppercase;
+            text-align: center;
+            color: #757575;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+    }
+}

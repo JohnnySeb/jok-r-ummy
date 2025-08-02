@@ -1,28 +1,4 @@
 body.intro {
-    h1 {
-        position: relative;
-        z-index: 2;
-        font-family: 'Bitcount Prop Single';
-        text-align: center;
-        font-size: 65px;
-        color: #47a5fe;
-        padding-top: 20px;
-        margin-bottom: 30px;
-
-        span {
-            &[data-letter="R"] {
-                font-family: Henny Penny;
-                color: #f75650;
-                font-size: 1.2em;
-                padding-right: 0.1em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            font-size: 14vw;
-        }
-    }
-
     .clown-face {
         display: block;
         margin: 0 auto;
@@ -38,15 +14,6 @@ body.intro {
         }
     }
 
-    .johnnyseb {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        right: 50%;
-        transform: translateX(50%);
-        width: 100%;
-    }
-
     @media (max-height: 950px) {
         .clown-face {
             width: 85%;
@@ -56,19 +23,10 @@ body.intro {
         .clown-face {
             margin-bottom: 7vh;
         }
-
-        .johnnyseb {
-            width: 55%;
-        }
     }
     @media (max-height: 860px) and (min-width: 450px) {
         .clown-face {
             width: 72%;
-        }
-    }
-    @media (max-height: 800px) and (min-width: 450px) {
-        .johnnyseb {
-            width: 60%;
         }
     }
 }
