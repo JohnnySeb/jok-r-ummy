@@ -23,9 +23,30 @@ $(function() {
         const $missionCard = $('.mission-card');
         const $missionBtn = $('.mission-change');
         const missionCards = [
-            'suicide_exemple.svg',
-            'exemple-2.svg',
-            'bonbon_exemple.svg'
+            'carte_1x-4-rouge-+-1x-4-noir',
+            'carte_1x-suite-de-5-carreau',
+            'carte_1x-suite-de-5-coeur',
+            'carte_1x-suite-de-5-pique',
+            'carte_1x-suite-de-5-trefle',
+            'carte_1x-suite-de-6-alterne',
+            'carte_1x-suite-de-6-carreau',
+            'carte_1x-suite-de-6-coeur',
+            'carte_1x-suite-de-6-pique',
+            'carte_1x-suite-de-6-trefle',
+            'carte_1x-suite-de-7-noir',
+            'carte_1x-suite-de-7-rouge',
+            'carte_1x-suite-de-13-melange',
+            'carte_2x-suite-de-4',
+            'carte_3x-suite-de-3',
+            'carte_1x-5-pareilles-sans-frime',
+            'carte_2x-3-pareilles-noir',
+            'carte_2x-3-pareilles-rouge',
+            'carte_2x-4-pareille',
+            'carte_3x-3-pareilles',
+            'carte_5x-as',
+            'carte_3x-la-royaute',
+            'carte_4x-paire-impaires',
+            'carte_4x-paire-paires'
         ];
         let usedImages = [];
 
@@ -41,7 +62,7 @@ $(function() {
         }
 
         function setMissionImage(imgName) {
-            $missionCard.html(`<img src="./assets/missions/${imgName}" alt="Mission">`);
+            $missionCard.html(`<img src="./assets/missions/${imgName}.svg" alt="Mission">`);
 
             if (imgName.startsWith('suicide')) {
                 $movingBackground.attr('data-color', 'jaune-noir');

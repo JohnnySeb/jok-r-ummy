@@ -15,7 +15,7 @@ suite de 6 en pique
 suite de 7 en rouge
 suite de 7 en noir
 suite de 13 cartes sans frime - sortes mêlées
-Suite alternée couleur sur 5 cartes (Rouge-Noir-Rouge-Noir-Rouge)
+Suite alternée couleur sur 6 cartes (Rouge-Noir-Rouge-Noir-Rouge)
 
 - - - - - - - - - - - -
 Pareilles
@@ -27,7 +27,7 @@ Pareilles
 1x 5 pareilles sans frime
 2x "3" + 2x "5" + 2x "7" + 2x "9"
 2x "4" + 2x "6" + 2x "8" + 2x "10"
-Toutes les figures (4 Valets + 4 Dames + 4 Rois)
+Toutes les figures (3 Valets + 3 Dames + 3 Rois)
 5x As
 
 - - - - - - - - - - - -

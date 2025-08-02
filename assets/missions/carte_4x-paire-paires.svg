@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 500 398.3">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <g style="isolation: isolate;">
+    <text transform="translate(107.7 62.5)" style="font-family: PTSans-Bold, &apos;PT Sans&apos;; font-size: 37.2px; font-weight: 700; isolation: isolate;"><tspan x="0" y="0">4x</tspan></text>
+    <text transform="translate(148.4 62.5)" style="font-family: PTSans-Regular, &apos;PT Sans&apos;; font-size: 37.2px; isolation: isolate;"><tspan x="0" y="0" xml:space="preserve"> Paire de paires</tspan></text>
+  </g>
+  <g>
+    <g>
+      <g>
+        <rect x="67.6" y="175.4" width="87.8" height="117.9" rx="7" ry="7" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+        <rect x="90.1" y="175.4" width="87.8" height="117.9" rx="7" ry="7" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+      </g>
+      <text transform="translate(73.7 200.1)" style="font-family: PTSans-Regular, &apos;PT Sans&apos;; font-size: 22.6px;"><tspan x="0" y="0">4</tspan></text>
+      <text transform="translate(96.3 200.1)" style="font-family: PTSans-Regular, &apos;PT Sans&apos;; font-size: 22.6px;"><tspan x="0" y="0">4</tspan></text>
+    </g>
+    <g>
+      <g>
+        <rect x="322.1" y="175.4" width="87.8" height="117.9" rx="7" ry="7" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+        <rect x="344.6" y="175.4" width="87.8" height="117.9" rx="7" ry="7" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+      </g>
+      <text transform="translate(328.3 200.1)" style="font-family: PTSans-Regular, &apos;PT Sans&apos;; font-size: 22.6px;"><tspan x="0" y="0">8</tspan></text>
+      <text transform="translate(350.9 200.1)" style="font-family: PTSans-Regular, &apos;PT Sans&apos;; font-size: 22.6px;"><tspan x="0" y="0">8</tspan></text>
+    </g>
+  </g>
+  <g>
+    <g>
+      <g>
+        <rect x="194.8" y="105.2" width="87.8" height="117.9" rx="7" ry="7" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+        <rect x="217.3" y="105.2" width="87.8" height="117.9" rx="7" ry="7" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+      </g>
+      <text transform="translate(201 129.9)" style="font-family: PTSans-Regular, &apos;PT Sans&apos;; font-size: 22.6px;"><tspan x="0" y="0">2</tspan></text>
+      <text transform="translate(223.6 129.9)" style="font-family: PTSans-Regular, &apos;PT Sans&apos;; font-size: 22.6px;"><tspan x="0" y="0">2</tspan></text>
+    </g>
+    <g>
+      <g>
+        <rect x="194.8" y="245.6" width="87.8" height="117.9" rx="7" ry="7" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+        <rect x="217.3" y="245.6" width="87.8" height="117.9" rx="7" ry="7" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+      </g>
+      <text transform="translate(201 270.3)" style="font-family: PTSans-Regular, &apos;PT Sans&apos;; font-size: 22.6px;"><tspan x="0" y="0">6</tspan></text>
+      <text transform="translate(223.6 270.3)" style="font-family: PTSans-Regular, &apos;PT Sans&apos;; font-size: 22.6px;"><tspan x="0" y="0">6</tspan></text>
+    </g>
+  </g>
+</svg>
