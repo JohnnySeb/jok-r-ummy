@@ -24,18 +24,18 @@ body {
 .button {
     display: block;
     width: 100%;
-    white-space: nowrap;
     margin: 0 auto;
     padding: 10px 20px;
     border-radius: 100px;
-    font-family: 'PT Sans';
-    font-size: 30px;
     background: #47a5fe;
     border: 5px solid #ffe4e4ff;
     color: white;
+    font-family: 'PT Sans';
+    font-size: 30px;
     font-weight: 700;
     text-decoration: none;
     text-align: center;
+    white-space: nowrap;
     transition: all 0.3s;
 
     @media (max-width: 480px) {
