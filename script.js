@@ -1,5 +1,6 @@
 $(function() {
     const $intro = $('body.intro');
+    const $game = $('body.game');
 
     if ($intro.length) {
         const $h1 = $intro.find('h1');
@@ -18,5 +19,15 @@ $(function() {
                 $(this).attr('data-letter', $(this).text());
             });
         }
+    }
+
+    if ($game.length) {
+        const $movingBackground = $('.moving-background');
+        const $colorSwitcher = $('.color-switcher');
+
+        $colorSwitcher.on('click', function() {
+            const color = $(this).data('color');
+            $movingBackground.attr('data-color', color);
+        });
     }
 });
