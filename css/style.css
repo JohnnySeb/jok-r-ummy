@@ -251,14 +251,14 @@ body.intro .container .johnnyseb {
     width: 55%;
   }
 }
-@media (max-height: 900px) and (min-width: 450px) {
-  body.intro .container .johnnyseb {
-    width: 50%;
+@media (max-height: 860px) and (min-width: 450px) {
+  body.intro .container .clown-face {
+    width: 72%;
   }
 }
-@media (max-height: 830px) and (min-width: 450px) {
-  body.intro .container .clown-face {
-    width: 75%;
+@media (max-height: 800px) and (min-width: 450px) {
+  body.intro .container .johnnyseb {
+    width: 60%;
   }
 }
 
