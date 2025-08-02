@@ -7,13 +7,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1>Jok-R-ummy</h1>
-  <div id="game-board">
-    <!-- Les cartes seront injectées ici -->
-  </div>
-  <div id="score-board">
-    <p>Score: <span id="score">0</span></p>
-  </div>
+  
 
   <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

@@ -1,0 +1,53 @@
+/* =======================================================
+   RESET CSS – Base légère et moderne pour ton projet
+   ======================================================= */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: system-ui, sans-serif;
+    background-color: #fff;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, textarea, select {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+a:focus, button:focus, input:focus, textarea:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}

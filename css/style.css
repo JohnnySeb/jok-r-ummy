@@ -1,29 +1,237 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+/* =======================================================
+   RESET CSS – Base légère et moderne pour ton projet
+   ======================================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: sans-serif;
-  background: #f5f5f5;
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+  background-color: #fff;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, textarea, select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+@font-face {
+  font-family: "Bitcount Prop Single";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bitcountpropsingle/v1/-W-gXIv9SyXT0xz0E9pIHCxbW8ZMGEVdhz4VoumsGFhzYseFqK9f_KOwYjYsHSocfu1DlxztzQH877SgJ2SUzQ4SJdODLz0JoLU3vXFrqXQooCdbs921GShlHGISgmFmdiScNw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0KExcOPIDU.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptsans/v17/jizfRExUiTo99u79B_mh0O6tLR8a8zI.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Henny Penny";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hennypenny/v17/wXKvE3UZookzsxz_kjGSfPQtvXIZt9DS.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+  background: #ddeeff;
+}
+
+.app-wrapper {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 50px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-family: "PT Sans";
+  font-size: 30px;
+  background: #47a5fe;
+  border: 5px solid #ffe4e4;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
   text-align: center;
-  padding: 20px;
+  transition: all 0.3s;
+}
+@media (max-width: 480px) {
+  .button {
+    font-size: 24px;
+  }
+}
+.button, .button:focus {
+  outline: none;
+}
+.button:hover {
+  background: #0f83b7;
 }
 
-#game-board {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+@keyframes flicker {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+.flicker {
+  animation-name: flicker;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
-.card {
-  width: 80px;
-  height: 120px;
+body.intro .moving-background {
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/pattern.svg");
+  background-repeat: repeat;
+  background-size: 100px;
+  background-position: center;
+  padding: 10px;
+  animation-name: backgroundslide;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes backgroundslide {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100px;
+  }
+}
+body.intro .container {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
   background: white;
-  border: 1px solid #ccc;
-  margin: 5px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
+  border-radius: 15px;
+}
+body.intro .container h1 {
+  position: relative;
+  z-index: 2;
+  font-family: "Bitcount Prop Single";
+  text-align: center;
+  font-size: 65px;
+  color: #47a5fe;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+body.intro .container h1 span[data-letter=R] {
+  font-family: Henny Penny;
+  color: #f75650;
+  font-size: 1.2em;
+  padding-right: 0.1em;
+}
+@media (max-width: 480px) {
+  body.intro .container h1 {
+    font-size: 14vw;
+  }
+}
+body.intro .container .clown-face {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 7vh;
+}
+body.intro .container .clown-face img {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+}
+@media (max-height: 900px) {
+  body.intro .container .clown-face {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

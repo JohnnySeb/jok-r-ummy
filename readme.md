@@ -1,4 +1,4 @@
-#### Jok-R-ummy
+# Jok-R-ummy
 
 ### Projet hébergé ici: 
 - https://johnnyseb.github.io/jok-r-ummy/
