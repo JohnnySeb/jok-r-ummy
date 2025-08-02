@@ -182,6 +182,7 @@ body {
   right: 50%;
   transform: translateX(50%);
   width: 100%;
+  opacity: 0.4;
 }
 @media (max-height: 780px) {
   .container .johnnyseb {
@@ -307,7 +308,6 @@ body.game .mission {
   display: block;
   position: relative;
   width: 100%;
-  padding: 0 50px;
 }
 body.game .mission .title {
   display: block;
@@ -316,8 +316,20 @@ body.game .mission .title {
   text-transform: uppercase;
   text-align: center;
   color: #757575;
-  border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
+  padding: 0 50px;
+}
+body.game .mission .title span {
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+body.game .mission .mission-card {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.3s;
+  padding: 0 35px;
 }
 
 /*# sourceMappingURL=style.css.map */

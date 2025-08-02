@@ -88,6 +88,7 @@ body {
         right: 50%;
         transform: translateX(50%);
         width: 100%;
+        opacity: 0.4;
 
         @media (max-height: 780px) {
             width: 55%;

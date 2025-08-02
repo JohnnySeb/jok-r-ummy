@@ -75,10 +75,21 @@ $(function() {
             }
         }
 
+        function setMissionCardWrapperHeight() {
+            const $img = $missionCard.find('img');
+            
+            $img.on('load', function() {
+                const imgHeight = $img.height();
+                $missionCard.css('max-height', `${imgHeight}px`);
+            });
+        }
+
         const initialImage = getRandomUnusedImage(true);
         if (initialImage) {
             setMissionImage(initialImage);
             usedImages.push(initialImage);
+
+            setMissionCardWrapperHeight();
         }
 
         $missionBtn.on('click', function() {
@@ -88,6 +99,8 @@ $(function() {
                 setMissionImage(nextImage);
                 usedImages.push(nextImage);
             }
+
+            setMissionCardWrapperHeight();;
         });
     }
 });
