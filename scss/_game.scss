@@ -6,6 +6,45 @@ body.game {
         }
     }
 
+    .points {
+        display: flex;
+        max-width: calc(100% - 100px);
+        margin: 0 auto;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding: 20px 20px 0;
+        background: #FFFFFF;
+        background: 
+            linear-gradient(
+                90deg, 
+                rgba(255, 255, 255, 1) 0%, 
+                rgba(255, 225, 226, 1) 30%, 
+                rgba(255, 233, 234, 1) 70%, 
+                rgba(255, 255, 255, 1) 100%
+            );
+        text-align: center;
+        margin-bottom: 30px;
+
+        .title {
+            font-size: 16px;
+            font-family: "PT Sans";
+            text-transform: uppercase;
+            text-align: center;
+            color: #757575;
+            padding-bottom: 12px;
+        }
+        
+        .points-value {
+            display: block;
+            font-family: 'Henny Penny';
+            color: #f75650;
+            font-size: 100px;
+            line-height: 1;
+        }
+    }
+
     .mission {
         display: block;
         position: relative;
@@ -34,6 +73,77 @@ body.game {
             height: 100vh;
             transition: all 0.3s;
             padding: 0 35px;
+        }
+    }
+
+    .popup {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        text-align: center;
+        z-index: 20;
+        border-radius: 40px;
+        -webkit-box-shadow: 6px 6px 8px -4px rgba(0,0,0,0.3); 
+        box-shadow: 6px 6px 8px -4px rgba(0,0,0,0.3);
+        width: calc(100% - 100px);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s, visibility 0s 0.5s;
+        pointer-events: none;
+
+        background-repeat: repeat;
+        background-size: 100px;
+        background-position: center;
+        animation-name: backgroundslide;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        background-image: url('../assets/pattern-bleu-rose.svg');
+
+        & > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        &::before {
+            content:'';
+            display: block;
+            position: absolute;
+            inset: 0;
+            background: #FFFFFF;
+            border-radius: 40px;
+            opacity: 0.6;
+        }
+        
+        &.active {
+            pointer-events: auto;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.5s, visibility 0s;
+        }
+
+        .btn-wrapper {
+            padding: 0;
+        }
+    }
+
+    .curtain {
+        display: block;
+        position: absolute;
+        inset: 0;
+        background: white;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 10;
+        transition: opacity 0.5s, visibility 0s 0.5s;
+        
+        &.active {
+            opacity: 0.7;
+            visibility: visible;
+            transition: opacity 0.5s, visibility 0s;
         }
     }
 }

@@ -9,9 +9,14 @@
     
     <body class="game">
         <div class="app-wrapper">
-            <div class="moving-background backgroundslide" data-color="bleu-rose">
+            <div class="moving-background backgroundslide" data-color="jaune-noir">
                 <div class="container">
                     <h1>JokRummy</h1>
+
+                    <div class="points">
+                        <div class="title">Points</div>
+                        <span class="points-value">0</span>
+                    </div>
 
                     <div class="mission">
                         <span class="title"><span>Mission</span></span>
@@ -25,7 +30,17 @@
                     <img class="johnnyseb" src='./assets/johnnyseb.svg' alt='' />
                 </div>
             </div>
+
+            <div class="popup">
+                <div class="btn-wrapper" style="padding-top: 5px;">
+                    <button class="success"><span class="big-text">J'ai réussi !</span> (+1 point)</button>
+                    <button class="skip"><span class="big-text">Je veux passer cette carte !</span> (-2 points)</button>
+                    <button class="cancel">Annuler</button>
+                </div>
+            </div>
+            <div class="curtain"></div>
         </div>
+
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="script.js"></script>

@@ -1,27 +1,33 @@
 $(function() {
-    const $game = $('body.game');
+    const game = $('body.game');
+    const h1 = $('h1');
 
-    const $h1 = $('h1');
+    if (h1.length) {
+        const chars = h1.text().split('');
 
-    if ($h1.length) {
-        const chars = $h1.text().split('');
-
-        $h1.html(chars.map(char => {
+        h1.html(chars.map(char => {
             const freq = (Math.random() * (2 - 1) + 1).toFixed(2);
             return `<span class="flicker" data-frequency="${freq}">${char}</span>`;
         }).join(''));
 
-        $h1.find('.flicker').each(function() {
+        h1.find('.flicker').each(function() {
             const freq = parseFloat($(this).attr('data-frequency'));
             $(this).css('animation-duration', `${1.5 * freq}s`);
             $(this).attr('data-letter', $(this).text());
         });
     }
 
-    if ($game.length) {
-        const $movingBackground = $('.moving-background');
-        const $missionCard = $('.mission-card');
-        const $missionBtn = $('.mission-change');
+    if (game.length) {
+        const movingBackground = $('.moving-background');
+        const pointsValue = $('.points-value');
+        const missionCard = $('.mission-card');
+        const missionBtn = $('.mission-change');
+        const success = $('.success');
+        const skip = $('.skip');
+        const cancel = $('.cancel');
+        const curtain = $('.curtain');
+        const popup = $('.popup');
+
         const missionCards = [
             'carte_1x-4-rouge-+-1x-4-noir',
             'carte_1x-suite-de-5-carreau',
@@ -62,25 +68,25 @@ $(function() {
         }
 
         function setMissionImage(imgName) {
-            $missionCard.html(`<img src="./assets/missions/${imgName}.svg" alt="Mission">`);
+            missionCard.html(`<img src="./assets/missions/${imgName}.svg" alt="Mission">`);
 
             if (imgName.startsWith('suicide')) {
-                $movingBackground.attr('data-color', 'jaune-noir');
+                movingBackground.attr('data-color', 'jaune-noir');
 
             } else if (imgName.startsWith('bonbon')) {
-                $movingBackground.attr('data-color', 'vert-rose');
+                movingBackground.attr('data-color', 'vert-rose');
 
             } else {
-                $movingBackground.attr('data-color', 'bleu-rose');
+                movingBackground.attr('data-color', 'bleu-rose');
             }
         }
 
         function setMissionCardWrapperHeight() {
-            const $img = $missionCard.find('img');
-            
+            const $img = missionCard.find('img');
+
             $img.on('load', function() {
                 const imgHeight = $img.height();
-                $missionCard.css('max-height', `${imgHeight}px`);
+                missionCard.css('max-height', `${imgHeight}px`);
             });
         }
 
@@ -92,7 +98,12 @@ $(function() {
             setMissionCardWrapperHeight();
         }
 
-        $missionBtn.on('click', function() {
+        missionBtn.on('click', function() {
+            curtain.addClass('active');
+            popup.addClass('active');
+        });
+
+        success.on('click', function() {
             const nextImage = getRandomUnusedImage();
 
             if (nextImage) {
@@ -100,7 +111,45 @@ $(function() {
                 usedImages.push(nextImage);
             }
 
-            setMissionCardWrapperHeight();;
+            setMissionCardWrapperHeight();
+
+            const currentPoints = parseInt(pointsValue.text(), 10) || 0;
+            pointsValue.text(currentPoints + 1);
+
+            curtain.removeClass('active');
+            popup.removeClass('active');
+        });
+        
+        skip.on('click', function() {
+            const nextImage = getRandomUnusedImage();
+
+            if (nextImage) {
+            setMissionImage(nextImage);
+            usedImages.push(nextImage);
+            }
+
+            setMissionCardWrapperHeight();
+
+            const currentPoints = parseInt(pointsValue.text(), 10) || 0;
+            const newPoints = Math.max(0, currentPoints - 2);
+            pointsValue.text(newPoints);
+
+            curtain.removeClass('active');
+            popup.removeClass('active');
+        });
+
+        cancel.on('click', function() {
+            curtain.removeClass('active');
+            popup.removeClass('active');
+        });
+
+        window.addEventListener('beforeunload', function (e) {
+            const message = "Rafraîchir vous fera perdre tous vos points!";
+
+            e.preventDefault();
+            e.returnValue = message;
+
+            return message;
         });
     }
 });
