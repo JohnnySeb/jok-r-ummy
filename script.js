@@ -54,7 +54,6 @@ $(function() {
             'carte_2x-3-pareilles-+-1x-suite-de-4',
             'carte_2x-3-pareilles-noir',
             'carte_2x-3-pareilles-rouge',
-            'carte_2x-3-pareilles',
             'carte_2x-4-pareille',
             'carte_2x-suite-de-4',
             'carte_3x-3-pareilles',
@@ -86,6 +85,7 @@ $(function() {
                     unused = unused.filter(img => !img.startsWith('suicide'));
                 }
             }
+            
             const idx = Math.floor(Math.random() * unused.length);
             return unused[idx];
         }
