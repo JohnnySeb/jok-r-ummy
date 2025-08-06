@@ -29,7 +29,17 @@ $(function() {
         const popup = $('.popup');
 
         const missionCards = [
+            'bonbon_1x-suite-de-3-+-1x-3-pareilles',
+            'bonbon_1x-suite-de-4',
+            'bonbon_2x-3-pareilles',
+            'bonbon_2x-suite-de-3',
+            'carte_1x-3-pareilles-+-1x-suite-de-5',
+            'carte_1x-3-pareilles-+-2x-suite-de-3',
+            'carte_1x-4-pareilles-+-1x-suite-de-4-noir',
+            'carte_1x-4-pareilles-+-1x-suite-de-4-rouge',
             'carte_1x-4-rouge-+-1x-4-noir',
+            'carte_1x-5-pareilles-sans-frime',
+            'carte_1x-suite-de-13-melange',
             'carte_1x-suite-de-5-carreau',
             'carte_1x-suite-de-5-coeur',
             'carte_1x-suite-de-5-pique',
@@ -41,28 +51,41 @@ $(function() {
             'carte_1x-suite-de-6-trefle',
             'carte_1x-suite-de-7-noir',
             'carte_1x-suite-de-7-rouge',
-            'carte_1x-suite-de-13-melange',
-            'carte_2x-suite-de-4',
-            'carte_3x-suite-de-3',
-            'carte_1x-5-pareilles-sans-frime',
+            'carte_2x-3-pareilles-+-1x-suite-de-4',
             'carte_2x-3-pareilles-noir',
             'carte_2x-3-pareilles-rouge',
+            'carte_2x-3-pareilles',
             'carte_2x-4-pareille',
+            'carte_2x-suite-de-4',
             'carte_3x-3-pareilles',
-            'carte_5x-as',
             'carte_3x-la-royaute',
+            'carte_3x-suite-de-3',
             'carte_4x-paire-impaires',
-            'carte_4x-paire-paires'
+            'carte_4x-paire-paires',
+            'carte_5x-as',
+            'suicide_1x-suite-de-13-noir',
+            'suicide_1x-suite-de-13-rouge',
+            'suicide_1x-suite-de-8',
+            'suicide_2x-5-pareilles',
+            'suicide_3x-4-pareilles'
         ];
         let usedImages = [];
 
         function getRandomUnusedImage(excludeSuicide = false) {
             let unused = missionCards.filter(img => !usedImages.includes(img));
+            
             if (excludeSuicide) {
                 unused = unused.filter(img => !img.startsWith('suicide'));
             }
-            if (unused.length === 0) return null;
-            
+
+            if (unused.length === 0) {
+                usedImages = [];
+                unused = missionCards.slice();
+
+                if (excludeSuicide) {
+                    unused = unused.filter(img => !img.startsWith('suicide'));
+                }
+            }
             const idx = Math.floor(Math.random() * unused.length);
             return unused[idx];
         }

@@ -35,11 +35,9 @@ Mix
 - - - - - - - - - - - -
 2x 3 pareilles + 1x suite de 4
 1x 3 pareilles + 1x suite de 5
-2x suites de 3 + 1x 3 pareilles
-1x suite de 4 rouge + 1x 4 pareilles
-1x suite de 4 noir + 1x 4 pareilles
-13 cartes noires
-13 cartes rouges
+1x 3 pareilles + 2x suites de 3
+1x 4 pareilles + 1x suite de 4 rouge
+1x 4 pareilles + 1x suite de 4 noir
 
 - - - - - - - - - - - -
 Missions bonbons

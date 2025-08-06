@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 500 521">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <g style="isolation: isolate;">
+    <text transform="translate(141.4 62.5)" style="font-family: PTSans-Bold, &apos;PT Sans&apos;; font-size: 37.2px; font-weight: 700; isolation: isolate;"><tspan x="0" y="0">1x</tspan></text>
+    <text transform="translate(182.1 62.5)" style="font-family: PTSans-Regular, &apos;PT Sans&apos;; font-size: 37.2px; isolation: isolate;"><tspan x="0" y="0" xml:space="preserve"> 4 pareilles</tspan></text>
+  </g>
+  <g>
+    <rect x="172.9" y="105.2" width="87.8" height="117.9" rx="7" ry="7" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+    <rect x="195.4" y="105.2" width="87.8" height="117.9" rx="7" ry="7" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+    <rect x="218" y="105.2" width="87.8" height="117.9" rx="7" ry="7" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+    <rect x="239.3" y="105.2" width="87.8" height="117.9" rx="7" ry="7" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+  </g>
+  <g style="isolation: isolate;">
+    <text transform="translate(137.6 304.9)" style="font-family: PTSans-Bold, &apos;PT Sans&apos;; font-size: 37.2px; font-weight: 700; isolation: isolate;"><tspan x="0" y="0">1x</tspan></text>
+    <text transform="translate(178.3 304.9)" style="font-family: PTSans-Regular, &apos;PT Sans&apos;; font-size: 37.2px; isolation: isolate;"><tspan x="0" y="0" xml:space="preserve"> Suite de 4</tspan></text>
+  </g>
+  <g>
+    <g>
+      <rect x="92" y="371.1" width="87.8" height="117.9" rx="6.9" ry="6.9" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+      <rect x="112.4" y="361.6" width="87.8" height="117.9" rx="6.9" ry="6.9" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+      <rect x="132.8" y="352.2" width="87.8" height="117.9" rx="6.9" ry="6.9" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+      <rect x="153.2" y="342.7" width="87.8" height="117.9" rx="6.9" ry="6.9" style="fill: #fff; stroke: #231f20; stroke-miterlimit: 10; stroke-width: .8px;"/>
+    </g>
+    <g>
+      <path d="M368.4,448.9l-.5-.7c4.1-3.5,7-7.8,7.4-13.3s.2-4.7-.6-4c-3,9.8-15.5,12.6-23.3,6.4-12.6-10.1-3.4-28.9,10.9-27.6,1.4.1,2.3-1.4,1.5-2.5h0s0,0,0-.1c-7.6-13.1,5.2-28.5,19.6-23.3,9.7,3.5,13.1,14.9,8.3,23.4-.6,1.1.2,2.4,1.5,2.4,11.1-.6,20.1,10.3,15.5,21.6-5,12.5-23.6,12.8-28.1-.2-1.1-.8-.2,5.5-.1,6,.5,2.5,2,5.8,3.6,7.8s2.6,2,3.4,3.5l-.4.7h-18.7Z" style="fill: #292929;"/>
+      <path d="M282.9,448.9l-.4-.7c0-.6,2.6-2.6,3.2-3.4,2-2.3,3.3-5.2,3.9-8.2s-1.8-2.6-2.9-1.3-1.4,1.6-2.4,2.2c-9.6,6.4-21.7-1-22.6-11.9s14.3-23.9,23-33.5c2.6-2.9,4.9-6,7.2-9,.4,0,.7.4.8.6,1.7,1.7,3.8,5,5.5,7.1,8.6,9.7,24.7,19.2,24.4,34-.4,14.3-18.7,21.5-26.5,8.5-7.8-13-1.2-3.2-1.8-2.6-.2,4.8.8,9.8,4,13.7s1.3,1.5,1.7,1.9c1,1,.3,2.8-1.1,2.8h-16.4.2Z" style="fill: #292929;"/>
+    </g>
+  </g>
+</svg>
