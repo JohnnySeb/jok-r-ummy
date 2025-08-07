@@ -1,8 +1,28 @@
 body.game {
     .container {
         h1 {
+            position: relative;
             padding-top: 10px;
             font-size: 35px;
+            z-index: 1;
+        }
+
+        .back {
+            display: block;
+            position: absolute;
+            width: 30px;
+            top: 30px;
+            left: 20px;
+            z-index: 2;
+
+            &,
+            &:focus {
+                outline: none;
+            }
+
+            svg path {
+                fill: #f75650;
+            }
         }
     }
 

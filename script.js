@@ -93,14 +93,18 @@ $(function() {
         function setMissionImage(imgName) {
             missionCard.html(`<img src="./assets/missions/${imgName}.svg" alt="Mission">`);
 
+            // Met à jour le texte du bouton succès selon le type de mission
             if (imgName.startsWith('suicide')) {
                 movingBackground.attr('data-color', 'jaune-noir');
-
-            } else if (imgName.startsWith('bonbon')) {
-                movingBackground.attr('data-color', 'vert-rose');
-
+                success.find('.small-text').text("(+3 points)");
             } else {
-                movingBackground.attr('data-color', 'bleu-rose');
+                success.find('.small-text').text("(+1 point)");
+                
+                if (imgName.startsWith('bonbon')) {
+                    movingBackground.attr('data-color', 'vert-rose');
+                } else {
+                    movingBackground.attr('data-color', 'bleu-rose');
+                }
             }
         }
 
@@ -127,6 +131,8 @@ $(function() {
         });
 
         success.on('click', function() {
+            const currentImg = missionCard.find('img').attr('src') || '';
+            const isSuicide = currentImg.includes('suicide');
             const nextImage = getRandomUnusedImage();
 
             if (nextImage) {
@@ -137,7 +143,8 @@ $(function() {
             setMissionCardWrapperHeight();
 
             const currentPoints = parseInt(pointsValue.text(), 10) || 0;
-            pointsValue.text(currentPoints + 1);
+            const addPoints = isSuicide ? 3 : 1;
+            pointsValue.text(currentPoints + addPoints);
 
             curtain.removeClass('active');
             popup.removeClass('active');

@@ -14,6 +14,30 @@ body.intro {
         }
     }
 
+    .rules {
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+
+        a {
+            display: block;
+            color: #f75650;
+            text-decoration: none;
+            padding: 10px 0;
+            transition: all 0.3s;
+
+            &,
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                color: #c74440;
+            }
+        }
+    }
+
     @media (max-height: 950px) {
         .clown-face {
             width: 85%;

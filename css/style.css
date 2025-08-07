@@ -295,6 +295,25 @@ body.intro .clown-face img {
   max-width: 100%;
   width: 100%;
 }
+body.intro .rules {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+body.intro .rules a {
+  display: block;
+  color: #f75650;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: all 0.3s;
+}
+body.intro .rules a, body.intro .rules a:focus {
+  outline: none;
+}
+body.intro .rules a:hover {
+  color: #c74440;
+}
 @media (max-height: 950px) {
   body.intro .clown-face {
     width: 85%;
@@ -312,8 +331,24 @@ body.intro .clown-face img {
 }
 
 body.game .container h1 {
+  position: relative;
   padding-top: 10px;
   font-size: 35px;
+  z-index: 1;
+}
+body.game .container .back {
+  display: block;
+  position: absolute;
+  width: 30px;
+  top: 30px;
+  left: 20px;
+  z-index: 2;
+}
+body.game .container .back, body.game .container .back:focus {
+  outline: none;
+}
+body.game .container .back svg path {
+  fill: #f75650;
 }
 body.game .points {
   display: flex;
